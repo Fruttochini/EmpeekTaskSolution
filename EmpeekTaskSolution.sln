@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpeekTaskSolution", "EmpeekTaskSolution\EmpeekTaskSolution.csproj", "{1657E5CC-5D98-4E32-89A9-6E8EE74119A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpeekTaskSolution.Datalayer", "EmpeekTaskSolution.Datalayer\EmpeekTaskSolution.Datalayer.csproj", "{A55E8670-7263-4C7A-A41B-37017B0246C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1657E5CC-5D98-4E32-89A9-6E8EE74119A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1657E5CC-5D98-4E32-89A9-6E8EE74119A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1657E5CC-5D98-4E32-89A9-6E8EE74119A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1657E5CC-5D98-4E32-89A9-6E8EE74119A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A55E8670-7263-4C7A-A41B-37017B0246C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55E8670-7263-4C7A-A41B-37017B0246C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55E8670-7263-4C7A-A41B-37017B0246C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55E8670-7263-4C7A-A41B-37017B0246C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

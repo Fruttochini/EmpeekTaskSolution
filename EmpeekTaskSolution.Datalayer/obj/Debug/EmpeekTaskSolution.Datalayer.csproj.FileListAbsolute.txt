@@ -1,0 +1,5 @@
+D:\Coding_projects\z_test_dir\EmpeekTaskSolution\EmpeekTaskSolution.Datalayer\bin\Debug\EmpeekTaskSolution.Datalayer.dll
+D:\Coding_projects\z_test_dir\EmpeekTaskSolution\EmpeekTaskSolution.Datalayer\bin\Debug\EmpeekTaskSolution.Datalayer.pdb
+D:\Coding_projects\z_test_dir\EmpeekTaskSolution\EmpeekTaskSolution.Datalayer\obj\Debug\EmpeekTaskSolution.Datalayer.csprojResolveAssemblyReference.cache
+D:\Coding_projects\z_test_dir\EmpeekTaskSolution\EmpeekTaskSolution.Datalayer\obj\Debug\EmpeekTaskSolution.Datalayer.dll
+D:\Coding_projects\z_test_dir\EmpeekTaskSolution\EmpeekTaskSolution.Datalayer\obj\Debug\EmpeekTaskSolution.Datalayer.pdb

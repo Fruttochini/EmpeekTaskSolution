@@ -1,0 +1,22 @@
+﻿body {
+    font-family:Arial;
+}
+#files {
+    border:thin;
+    font-family:Arial;
+}
+#files thead{
+    background:#9f9f9f;
+    
+    color:#ffffff;
+    
+}
+
+#files td{
+    background:#dfdfdf;
+    text-align:center;
+}
+
+#currentDirectory{
+    font-weight:bold;
+}
