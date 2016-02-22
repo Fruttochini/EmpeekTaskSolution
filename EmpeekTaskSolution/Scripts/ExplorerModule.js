@@ -1,7 +1,7 @@
 ﻿var explorerApp = angular.module('explorerApp',[]);
 explorerApp.controller('ExplorerCtrl',  
 	function ($scope, $http) {
-		
+		//On page load/refresh - get information about directories
 		$http.get('http://localhost:9834/api/Explorer/GetDirectories')
 						.then(function (response) {
 						    $scope.filesizes = response.data.CurrentDirectoryFS;
@@ -13,13 +13,12 @@ explorerApp.controller('ExplorerCtrl',
 						});
 				
         
-		
-		$scope.dosmth = function (item, currentPath) {
-			
+		//On directory click function
+		$scope.changeDirectory = function (item, currentPath) {
+			//request with parameters
 		    $http.get('http://localhost:9834/api/Explorer/GetDirectories', { params: { folder: item, curPath: currentPath } })
 				.then(function (response) {
-				    //				    $scope.filesizes = response.data.CurrentDirectoryFS;
-				   
+				    				   
 				    $scope.directories = response.data.SubDirectories;
 				    $scope.files = response.data.SubFiles;
 				   

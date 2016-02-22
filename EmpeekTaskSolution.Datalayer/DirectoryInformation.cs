@@ -7,12 +7,21 @@ using System.IO;
 
 namespace EmpeekTaskSolution.Datalayer
 {
+    /// <summary>
+    /// Represents Information about current directory with access to subdirectories and files,
+    /// provides information about filesizes
+    /// </summary>
     public class DirectoryInformation
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="curDir">"Main" by default = access to logical drives</param>
         public DirectoryInformation(string curDir = "main")
         {
             CurrentDirectory = curDir;
         }
+
         private string _directory;
 
         public string CurrentDirectory
@@ -21,6 +30,9 @@ namespace EmpeekTaskSolution.Datalayer
             set { _directory = value; }
         }
 
+        /// <summary>
+        /// Array of strings with subdirectories names
+        /// </summary>
         public string[] SubDirectories
         {
             get
@@ -53,6 +65,9 @@ namespace EmpeekTaskSolution.Datalayer
 
         }
 
+        /// <summary>
+        /// Array of strings with filenames
+        /// </summary>
         public string[] SubFiles
         {
             get
@@ -76,11 +91,19 @@ namespace EmpeekTaskSolution.Datalayer
             }
         }
 
+        /// <summary>
+        /// Gets array with counts of ranged filesizes
+        /// </summary>
         public int[] CurrentDirectoryFS
         {
             get { return GetFileSizes(CurrentDirectory); }
         }
 
+        /// <summary>
+        /// Returns array with counts of ranged filesizes in subdirectories of current directory
+        /// </summary>
+        /// <param name="directory"></param>
+        /// <returns></returns>
         private int[] GetFileSizes(string directory)
         {
             int[] fileSizes = { 0, 0, 0 };
@@ -120,6 +143,11 @@ namespace EmpeekTaskSolution.Datalayer
             return fileSizes;
         }
 
+
+        /// <summary>
+        /// Move to parent directory (up)
+        /// </summary>
+        /// <param name="curPath"></param>
         public void MoveUp(string curPath)
         {
             DirectoryInfo di = new DirectoryInfo(curPath);

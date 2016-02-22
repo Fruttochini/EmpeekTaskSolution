@@ -12,7 +12,10 @@ namespace EmpeekTaskSolution.Controllers
     public class ExplorerController : ApiController
     {
         private DirectoryInformation _di = new DirectoryInformation();
-
+        /// <summary>
+        /// Returns HTTP 200 and JSON-serialized DirectoryInformation object
+        /// </summary>
+        /// <returns></returns>
         public HttpResponseMessage GetDirectories()
         {
             var content = _di;
@@ -20,6 +23,12 @@ namespace EmpeekTaskSolution.Controllers
             return message;
         }
 
+        /// <summary>
+        /// Returns HTTP 200 and JSON-serialized DirectoryInformation object with changed Current Directory
+        /// </summary>
+        /// <param name="curPath">Current path</param>
+        /// <param name="folder">Directory selected by user</param>
+        /// <returns></returns>
         public HttpResponseMessage GetDirectories(string curPath, string folder)
         {
             if (folder == "..")

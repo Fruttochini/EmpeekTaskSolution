@@ -24,7 +24,7 @@
         </tr>
     </table>
     <div><span id="currentDirectory">Current path:</span> {{currentPath}}</div>
-    <div ng-repeat="directory in directories" ng-click="dosmth(directory, currentPath)"><a href="">{{directory}}</a></div>
+    <div ng-repeat="directory in directories" ng-click="changeDirectory(directory, currentPath)"><a href="">{{directory}}</a></div>
 	<div ng-repeat="file in files">{{file}}</div>
 
 
